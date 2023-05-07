@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/goit-test-fs66/static/css/main.29cfe2bc.css",
+    "main.js": "/goit-test-fs66/static/js/main.d8691650.js",
+    "static/media/companyLogo.png": "/goit-test-fs66/static/media/companyLogo.cad509a2cc976e8da7ef.png",
+    "static/media/picture.png": "/goit-test-fs66/static/media/picture.b3d9942b3f9d5dad1ff0.png",
+    "static/media/prew.jpg": "/goit-test-fs66/static/media/prew.7c33e141a214d44a1430.jpg",
+    "index.html": "/goit-test-fs66/index.html",
+    "main.29cfe2bc.css.map": "/goit-test-fs66/static/css/main.29cfe2bc.css.map",
+    "main.d8691650.js.map": "/goit-test-fs66/static/js/main.d8691650.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29cfe2bc.css",
+    "static/js/main.d8691650.js"
+  ]
+}
