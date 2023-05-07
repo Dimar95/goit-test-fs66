@@ -14,4 +14,54 @@ box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
 border-radius: 10.3108px;
 border: transparent;
 cursor: pointer;
+margin-top: 36px;
+max-width: 200px;
+}
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.section{
+    background-color:#F3F8F3 ;
+    padding: 68px 55px;
+    display: flex;
+}
+.gridContainer{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.radio{
+    margin-left: 20px;
+}
+.label{
+    background-color: #373737;
+    padding: 8px 48px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 152%;
+    color: #fff;
+    border-radius: 40px;
+    margin-left: 36px;
 }

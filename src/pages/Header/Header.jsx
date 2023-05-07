@@ -1,15 +1,20 @@
-import { NavLink } from "react-router-dom";
-import { CiEdit } from "react-icons/ci";
-import { IconContext } from "react-icons";
+import css from "./Header.module.css";
+import { NavLink, Outlet } from "react-router-dom";
+import Logo from "../../images/companyLogo.png";
 const Header = () => {
   return (
-    <div>
-      <IconContext.Provider value={{ color: "blue", width: "50px" }}>
-        <CiEdit />
-        <NavLink to={"/"}>Home</NavLink>
-        <NavLink to={"tweets"}>Tweets</NavLink>
-      </IconContext.Provider>
-    </div>
+    <>
+      <div className={css.container}>
+        <img src={Logo} alt="logo" className={css.image} />
+        <NavLink className={css.link} to={"/"}>
+          Home
+        </NavLink>
+        <NavLink className={css.link} to={"tweets"}>
+          Tweets
+        </NavLink>
+      </div>
+      <Outlet />
+    </>
   );
 };
 export default Header;
