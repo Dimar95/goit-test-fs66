@@ -26,16 +26,3 @@ export const putUser = createAsyncThunk(
     }
   }
 );
-// export const putUser = createAsyncThunk(
-//   "contacts/fetchCurrent",
-//   async (id, { rejectWithValue }) => {
-//     try {
-//       const currentUser = await getCurrentUser(id);
-//       const user = { ...currentUser, followers: currentUser.followers + 1 };
-//       const putUser = await getCurrentUser(id, user);
-//       return putUser;
-//     } catch (error) {
-//       return rejectWithValue(error.message);
-//     }
-//   }
-// );

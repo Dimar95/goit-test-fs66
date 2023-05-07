@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Tweets = () => {
   const [page, setPage] = useState(3);
   const [filterStatus, setFilterStatus] = useState("showAll");
-  const { data } = useGetAllUserApiQuery(page);
+  const { data, error } = useGetAllUserApiQuery(page);
 
   const onLoadMore = () => {
     setPage((prevState) => prevState + 3);
@@ -34,7 +34,6 @@ const Tweets = () => {
           >
             Go Back
           </Link>
-
           <div>
             <label className={css.label}>
               Show All
@@ -72,6 +71,7 @@ const Tweets = () => {
           </div>
         </div>
         <div className={css.gridContainer}>
+          {error && <div>{error.message}</div>}
           {data &&
             data.map((item) => {
               const { tweets, followers, avatar, id } = item;

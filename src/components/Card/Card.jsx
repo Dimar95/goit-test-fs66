@@ -10,7 +10,8 @@ import { useUpdateUserMutation } from "../../redux/API/mockAPI";
 const Card = ({ tweets, followers, avatar, id, filterStatus }) => {
   const userFollowing = useSelector(userFollowingSelector);
   const dispatch = useDispatch();
-  const [updateFollow, { isLoading: isUpdating }] = useUpdateUserMutation(id);
+  const [updateFollow] = useUpdateUserMutation(id);
+
   const [followStatus, setFollowStatus] = useState(() => {
     const item = userFollowing.indexOf(id);
     if (item === -1) {
